@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Restaurant - Main Menu</title>
+
+    <!---custom css link-->
+    <link rel="stylesheet" href="styles3.css">
+
+    <!---boxicon link-->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!---remixicon link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+
+
+      <!---google font link-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+
+    <header style="background-color: black; opacity: .5;">
+        <div class="customButtonContainer" onclick="navigateToPage()" style="opacity: 0%;">
+            <!-- The text elements -->
+            <a class="XuJi" style="opacity: 0%;">徐记</a>
+
+        <div>
+            <a class="Sarawak" style="opacity: 0%;">砂拉越</a>
+            <a class="GuZhaoWei" style="opacity: 0%;">古早味</a>
+            <div class="LaksaAndKolo" style="opacity: 0%;">叻沙/哥罗面</div>
+            <div class="LaksaAndKoloEnglish" style="opacity: 0%;">The Original Sarawak Laksa & Kolo Mee</div>
+        </div>
+        </div>
+
+    </header>
+
+
+
+    <header>
+
+
+        <div class="customButtonContainer fade" onclick="navigateToPage()">    
+            <a class="XuJi">徐记</a>    
+            <div>
+            <a class="Sarawak">砂拉越</a>
+            <a class="GuZhaoWei">古早味</a>
+            <div class="LaksaAndKolo">叻沙/哥罗面</div>
+            <div class="LaksaAndKoloEnglish">The Original Sarawak Laksa & Kolo Mee</div>
+        </div>
+        </div>
+
+
+        <nav>
+            <ul class="NavList">
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Drinks.html">Drinks</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>    
+        </nav>
+ 
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+    </header>
+
+
+
+    <section class="screen">
+
+
+    <div class="iframe">
+
+    <p class="font1">Shop Location</p>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127627.90165174824!2d103.53442519726562!3d1.5428277999999966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da72ea83ab6943%3A0xbfaffa20dc005d01!2z5b6Q6K6w5q2j5a6X56CC5Yqz6LaKIC0g5ZOl572X6Z2iLeWPu-aymS3pnaLoloQ!5e0!3m2!1szh-CN!2smy!4v1691210433519!5m2!1szh-CN!2smy" 
+    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    </div>
+
+    
+    <div class="rightbox">
+
+        <div class="right-box-header">History</div>
+        <div class="right-box-upper">创始人来源于砂劳越古晋并居住在柔佛，曾经于2014在柔佛淡杯的一间店面开设最原本的徐记哥罗面店面档口。经过了几年，创始人在2021年5月决定开设金山园的第一间正式徐记砂拉越古早味叻沙和哥罗面的店面，而且创始人已经在2023年3月的茂士奥汀花园开设第二间分店。</div>
+        <div class="right-box-lower">The founder originates from Kuching, Sarawak, and resides in Johor. In 2014, the founder opened the original Xu Ji KoloMee stall in a shop in Tampoi, Johor. After several years, in May 2021, the founder decided to open the first official Xu Ji Sarawak Laksa and KoloMee store in Taman Impian Emas, Johor. And by March 2023, the founder had opened a second branch in Taman Mount Austin.</div>
+
+    
+        </div>
+   
+
+    </section>
+
+    <div class="footer">
+        <p class="small">Location : Taman Impian <Emas>
+        <br>/Taman Mount Austin</p>
+        <p class="small">Contact Number : 018-769 4773 / 010-3727291</p>
+        <p class="small-close">Open Time : 8am ~ 4pm</p>
+
+
+    </div>
+
+
+
+    <script>
+
+    function navigateToPage() {
+            
+            window.location.href = 'Home.html';
+        }
+
+    let menu = document.querySelector('#menu-icon');
+    let NavList = document.querySelector('.NavList');
+
+    menu.onclick = () =>{
+
+    menu.classList.toggle('bx-x');
+    NavList.classList.toggle('open');
+    }
+    </script>
+
+
+ 
+</body>
+</html>

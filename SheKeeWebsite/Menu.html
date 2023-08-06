@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Restaurant - Main Menu</title>
+
+    <!---custom css link-->
+    <link rel="stylesheet" href="styles1.css">
+
+    <!---boxicon link-->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!---remixicon link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+
+
+      <!---google font link-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+
+    <header style="background-color: black; opacity: .5;">
+        <div class="customButtonContainer" onclick="navigateToPage()" style="opacity: 0%;">
+            <!-- The text elements -->
+            <a class="XuJi" style="opacity: 0%;">徐记</a>
+
+        <div>
+            <a class="Sarawak" style="opacity: 0%;">砂拉越</a>
+            <a class="GuZhaoWei" style="opacity: 0%;">古早味</a>
+            <div class="LaksaAndKolo" style="opacity: 0%;">叻沙/哥罗面</div>
+            <div class="LaksaAndKoloEnglish" style="opacity: 0%;">The Original Sarawak Laksa & Kolo Mee</div>
+        </div>
+        </div>
+
+    </header>
+
+
+
+    <header>
+
+
+        <div class="customButtonContainer fade" onclick="navigateToPage()">    
+            <a class="XuJi">徐记</a>    
+            <div>
+            <a class="Sarawak">砂拉越</a>
+            <a class="GuZhaoWei">古早味</a>
+            <div class="LaksaAndKolo">叻沙/哥罗面</div>
+            <div class="LaksaAndKoloEnglish">The Original Sarawak Laksa & Kolo Mee</div>
+        </div>
+        </div>
+
+
+        <nav>
+            <ul class="NavList">
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Drinks.html">Drinks</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>    
+        </nav>
+ 
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+    </header>
+
+
+
+    <section class="screen">
+
+        <div class="adjust">
+            <img src="Menu.png" alt="" style="height: 100%; width: 100%;">
+        </div>
+        
+        
+    
+   
+
+    </section>
+
+    <div class="footer">
+        <p class="small">Location : Taman Impian <Emas>
+        <br>/Taman Mount Austin</p>
+        <p class="small">Contact Number : 018-769 4773 / 010-3727291</p>
+        <p class="small-close">Open Time : 8am ~ 4pm</p>
+
+
+    </div>
+
+
+
+    <script>
+
+    function navigateToPage() {
+            
+            window.location.href = 'Home.html';
+        }
+
+    let menu = document.querySelector('#menu-icon');
+    let NavList = document.querySelector('.NavList');
+
+    menu.onclick = () =>{
+
+    menu.classList.toggle('bx-x');
+    NavList.classList.toggle('open');
+    }
+    </script>
+
+
+ 
+</body>
+</html>
